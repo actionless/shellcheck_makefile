@@ -1,7 +1,7 @@
 [project]
 name = "shellcheck_makefile"
 version = '1.27'
-description = 'Small utility for applying Shellcheck on Makefiles. Depends only on make and python.'
+description = 'Small utility for applying Shellcheck on Makefiles. Depends only on `shellcheck`, `make` and `python`.'
 authors = [
   {name = 'Yauhen Kirylau', email = 'actionless.loveless@gmail.com'},
 ]
