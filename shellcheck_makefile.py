@@ -106,6 +106,9 @@ class MakefileMetadata:
                 ):
                     make_shell = words[2]
 
+            if line.startswith("make["):
+                continue
+
             if lines[idx - 1] == not_a_target_comment:
                 continue
 
