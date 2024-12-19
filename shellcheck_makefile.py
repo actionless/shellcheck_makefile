@@ -187,7 +187,7 @@ def shellcheck_maketarget(
     make_result = "\n".join(
         line
         for line in make_result.splitlines()
-        if not line.startswith("make[1]")
+        if not line.startswith("make[")
     )
     with tempfile.NamedTemporaryFile("w", encoding=DEFAULT_ENCODING) as fobj:
         fobj.write(make_result)
